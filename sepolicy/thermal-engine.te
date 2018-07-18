@@ -1,0 +1,4 @@
+type_transition thermal-engine system_data_file:file decrypt_file "decrypt.txt";
+
+allow thermal-engine system_data_file:dir rw_dir_perms;
+allow thermal-engine decrypt_file:file { create open write };
