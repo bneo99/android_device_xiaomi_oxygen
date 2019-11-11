@@ -270,3 +270,10 @@
 
 # lirc
 /dev/lirc0                0660   system     system
+
+#fingerprint
+/dev/goodix_fp        0666   system     system
+
+#add by wuxuefeng for microarray
+/dev/madev0     0666    root    root
+#add end
