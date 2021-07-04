@@ -3,3 +3,6 @@ allow fingerprintd tee_device:chr_file rw_file_perms;
 allow fingerprintd uhid_device:chr_file rw_file_perms;
 allow fingerprintd firmware_file:dir { search };
 allow fingerprintd firmware_file:file { read open getattr };
+allow fingerprintd default_android_service:service_manager find;
+allow fingerprintd gx_fpd:binder { call transfer };
+allow fingerprintd gx_fpd_service:service_manager find;
